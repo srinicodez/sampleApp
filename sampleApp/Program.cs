@@ -13,15 +13,24 @@ namespace sampleApp
             int a = 1;
             int b = 2;
 
+            int s = 0;
+            int q= 0;
+
             Program p = new Program();
 
-            p.Add(a, b);
+           s = p.Add(a, b);
+            q = p.subs(a, b);
 
         }
 
         public int Add(int i ,int j)
         {
             return i + j;
+        }
+
+        public int subs(int i , int j)
+        {
+            return i - j;
         }
     }
 }
